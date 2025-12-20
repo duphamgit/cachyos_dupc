@@ -1,0 +1,66 @@
+* {
+    /* Màu nền đen xám (Charcoal) với độ trong suốt nhẹ */
+    bg:          #1a1b26f2; 
+    /* Màu chữ trắng xám để không bị chói mắt */
+    fg:          #c0caf5;
+    /* Màu cam bạn thích làm điểm nhấn cho mục đang chọn */
+    accent:      #ff8c00;
+    /* Màu đen đậm hơn cho thanh search */
+    input-bg:    #16161e;
+
+    background-color: transparent;
+    text-color:       @fg;
+    margin:          0;
+    padding:         0;
+    spacing:         0;
+}
+
+window {
+    width:            15%;
+    background-color: @bg;
+    border-radius:    0px;
+    border:           4px;
+    border-color:     #5f87af; /* Viền rất mảnh màu xám xanh */
+}
+
+mainbox {
+    padding:    15px;
+    children:   [ inputbar, listview ];
+}
+prompt {
+    enabled: false; /* Ẩn hoàn toàn chữ "drun" hoặc "Apps" */
+}
+inputbar {
+    background-color: @input-bg;
+    border-radius:    8px;
+    margin:           0 0 12px 0;
+    padding:          12px;
+    children:         [ prompt, entry ];
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: false;
+}
+
+element {
+    padding:       4px 10px;
+    spacing:       5px;
+    border-radius: 0px;
+}
+
+element selected {
+    /* Khi chọn sẽ sáng lên màu xám nhẹ hoặc dùng màu cam accent */
+    background-color: rgba(255, 255, 255, 0.1);
+    text-color:       @accent;
+}
+
+element-icon {
+    enabled:false;
+}
+element-text {
+    font: "JetBrains Mono Nerd Font 9"; /* Chữ app nhỏ xíu nhìn rất sang */
+    vertical-align: 0.5;
+    horizontal-align: 0.0; /* Căn lề trái */
+}
