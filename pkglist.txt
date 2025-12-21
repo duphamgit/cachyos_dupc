@@ -185,6 +185,7 @@ uwsm
 vi
 vim
 virt-manager
+visual-studio-code-bin
 vlc-plugins-all
 vpl-gpu-rt
 vulkan-intel
