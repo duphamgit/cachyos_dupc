@@ -60,7 +60,7 @@ element-icon {
     enabled:false;
 }
 element-text {
-    font: "JetBrains Mono Nerd Font 9"; /* Chữ app nhỏ xíu nhìn rất sang */
+    font: "JetBrains Mono Nerd Font 10"; /* Chữ app nhỏ xíu nhìn rất sang */
     vertical-align: 0.5;
     horizontal-align: 0.0; /* Căn lề trái */
 }
