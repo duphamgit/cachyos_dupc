@@ -1,5 +1,4 @@
 accountsservice
-alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
@@ -87,7 +86,6 @@ intel-ucode
 iptables-nft
 iwd
 jfsutils
-kitty
 less
 lib32-mesa
 lib32-opencl-mesa

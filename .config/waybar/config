@@ -21,14 +21,10 @@
     "modules-right": [
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
         "cpu",
         "memory",
         "disk",
-        "keyboard-state",
-        "sway/language",
-        "clock",
-        "tray"
+        "clock"
     ],
     // Modules configuration
     // "sway/workspaces": {
