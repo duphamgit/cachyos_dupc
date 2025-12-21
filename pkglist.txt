@@ -17,6 +17,7 @@ btop
 btrfs-assistant
 btrfs-progs
 cachyos-fish-config
+cachyos-gaming-meta
 cachyos-grub-theme
 cachyos-hello
 cachyos-hooks
@@ -166,6 +167,7 @@ smartmontools
 snapper
 sof-firmware
 starship
+steam
 sudo
 swww
 sysfsutils
