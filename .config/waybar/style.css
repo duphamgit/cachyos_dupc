@@ -52,7 +52,13 @@ window#waybar.solo {
     background-color: #FFFFFF;
 }
 */
-
+#disk {
+    color: #f9e2af; /* Màu vàng nhạt nhã nhặn */
+    background: #313244; /* Màu nền tối */
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+}
 window#waybar.termite {
     background-color: #3F3F3F;
 }

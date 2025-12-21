@@ -7,3 +7,4 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Kích hoạt Starship
 eval "$(starship init zsh)"
+alias dupc-save="~/cachyos_dupc/update.sh && cd ~/cachyos_dupc && git add . && git commit -m 'Auto Update' && git push"

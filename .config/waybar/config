@@ -30,7 +30,8 @@
         "sway/language",
         "clock",
         "tray",
-        "custom/power"
+        "custom/power",
+        "disk"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -49,6 +50,12 @@
     //         "default": ""
     //     }
     // },
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "tooltip-format": "Ổ cứng: {used} / {total} ({percentage_used}%)"
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

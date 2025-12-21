@@ -12,6 +12,7 @@ bluez
 bluez-hid2hci
 bluez-libs
 bluez-utils
+bridge-utils
 btop
 btrfs-assistant
 btrfs-progs
@@ -46,6 +47,7 @@ dolphin
 dosfstools
 duf
 e2fsprogs
+edk2-ovmf
 efibootmgr
 efitools
 ethtool
@@ -61,6 +63,7 @@ ffmpegthumbnailer
 fsarchiver
 ghostty
 git
+github-cli
 glances
 grub
 grub-btrfs-support
@@ -92,6 +95,7 @@ lib32-vulkan-intel
 libdvdcss
 libgsf
 libopenraw
+libvirt
 libwnck3
 linux-cachyos
 linux-cachyos-headers
@@ -127,6 +131,7 @@ nss-mdns
 ntp
 octopi
 opencl-mesa
+openrgb
 openssh
 os-prober
 pacman-contrib
@@ -146,6 +151,7 @@ pv
 python
 python-defusedxml
 python-packaging
+qemu-desktop
 rebuild-detector
 reflector
 ripgrep
@@ -176,6 +182,7 @@ usbutils
 uwsm
 vi
 vim
+virt-manager
 vlc-plugins-all
 vpl-gpu-rt
 vulkan-intel
@@ -188,6 +195,7 @@ wl-clipboard
 wofi
 wpa_supplicant
 xdg-desktop-portal-hyprland
+xdg-terminal-exec
 xdg-user-dirs
 xf86-input-libinput
 xfsprogs
@@ -199,3 +207,4 @@ xorg-xinput
 xorg-xkill
 xorg-xrandr
 xorg-xwayland
+yaru-icon-theme
