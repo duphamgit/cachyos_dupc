@@ -11,3 +11,5 @@ alias dupc-save="~/cachyos_dupc/update.sh && cd ~/cachyos_dupc && git add . && g
 # Cho phép completion nhận diện dấu bằng
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export SHELL=/bin/zsh
