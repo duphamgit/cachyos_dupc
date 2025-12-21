@@ -10,7 +10,7 @@ echo -e "${BLUE}🚀 Chào mừng tới bộ cài tự động DUPC...${NC}"
 # 1. Cài đặt các gói từ kho chính (Official)
 if [ -f pkglist.txt ]; then
     echo -e "${GREEN}📦 Đang cài đặt ứng dụng từ Official Repos...${NC}"
-    sudo pacman -S --needed --noconfirm - < pkglist.txt
+    sudo paru -S --needed --noconfirm - < pkglist.txt
 fi
 
 # 2. Cài đặt các gói từ AUR (Dùng paru hoặc yay)
