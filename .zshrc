@@ -8,3 +8,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Kích hoạt Starship
 eval "$(starship init zsh)"
 alias dupc-save="~/cachyos_dupc/update.sh && cd ~/cachyos_dupc && git add . && git commit -m 'Auto Update' && git push"
+# Cho phép completion nhận diện dấu bằng
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
