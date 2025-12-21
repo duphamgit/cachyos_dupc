@@ -167,6 +167,7 @@ snapper
 sof-firmware
 starship
 sudo
+swww
 sysfsutils
 texinfo
 ttf-bitstream-vera
@@ -188,6 +189,7 @@ vlc-plugins-all
 vpl-gpu-rt
 vulkan-intel
 waybar
+waypaper
 wget
 which
 wireless-regdb
