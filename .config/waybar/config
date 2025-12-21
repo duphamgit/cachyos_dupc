@@ -15,23 +15,20 @@
 	"hyprland/window"
     ],
     "modules-center": [
-        "sway/window"
+        "sway/window",
+        "custom/hint"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "backlight",
+        "disk",
         "keyboard-state",
         "sway/language",
         "clock",
-        "tray",
-        "custom/power",
-        "disk"
+        "tray"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -50,11 +47,16 @@
     //         "default": ""
     //     }
     // },
+    "custom/hint": {
+        "format": "Super + Q: Close  |  Super + Space: Search",
+        "interval": "once",
+        "tooltip": false
+    },
     "disk": {
         "interval": 30,
-        "format": "󰋊 {percentage_used}%",
+        "format": "{percentage_used}% HDD",
         "path": "/",
-        "tooltip-format": "Ổ cứng: {used} / {total} ({percentage_used}%)"
+        "tooltip-format": "HDD: {used} / {total} ({percentage_used}%)"
     },
     "keyboard-state": {
         "numlock": true,

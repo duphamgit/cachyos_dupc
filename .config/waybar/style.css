@@ -1,4 +1,4 @@
-* {
+*{
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -52,13 +52,6 @@ window#waybar.solo {
     background-color: #FFFFFF;
 }
 */
-#disk {
-    color: #f9e2af; /* Màu vàng nhạt nhã nhặn */
-    background: #313244; /* Màu nền tối */
-    padding: 0 10px;
-    margin: 0 4px;
-    border-radius: 8px;
-}
 window#waybar.termite {
     background-color: #3F3F3F;
 }
@@ -410,4 +403,11 @@ label:focus {
 #workspaces button:hover {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 0px;
+}
+#custom-hint {
+    color: #ffffff;      /* Màu chữ trắng (hoặc màu bạn thích) */
+    background: transparent; /* Xóa bỏ màu nền */
+    padding: 0 10px;
+    margin: 0;
+    font-weight: 500;    /* Độ đậm vừa phải cho thanh lịch */
 }
