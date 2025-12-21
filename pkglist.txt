@@ -129,6 +129,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
 ntp
+nvme-cli
 octopi
 opencl-mesa
 openrgb
