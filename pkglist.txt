@@ -44,7 +44,6 @@ diffutils
 dmidecode
 dmraid
 dnsmasq
-dolphin
 dosfstools
 duf
 e2fsprogs
@@ -214,3 +213,4 @@ xorg-xkill
 xorg-xrandr
 xorg-xwayland
 yaru-icon-theme
+yazi
