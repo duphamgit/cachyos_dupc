@@ -1,3 +1,4 @@
+7zip
 accountsservice
 alacritty
 alsa-firmware
@@ -59,7 +60,6 @@ fcitx5-bamboo
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
-ffmpegthumbnailer
 fsarchiver
 ghostty
 git
@@ -74,6 +74,7 @@ gst-plugin-va
 gst-plugins-bad
 gst-plugins-ugly
 gum
+gvfs
 haveged
 hdparm
 hwdetect
@@ -118,6 +119,7 @@ modemmanager
 mtools
 nano
 nano-syntax-highlighting
+nautilus
 netctl
 networkmanager
 networkmanager-openvpn
@@ -168,6 +170,7 @@ sof-firmware
 starship
 steam
 sudo
+sushi
 swww
 sysfsutils
 texinfo
