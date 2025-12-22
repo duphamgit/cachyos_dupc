@@ -44,24 +44,18 @@ window#waybar {
 /* Cấu hình chung cho tất cả các module bên phải (Right Modules) */
 #clock, #battery, #cpu, #memory, #disk, #temperature, 
 #network, #pulseaudio, #tray, #power-profiles-daemon {
+	background: rgba(255, 255, 255, 0.1); /* Nền cực nhẹ để lộ màu nền Waybar */
+    color: #f8f8f2; /* Chữ trắng sáng */
+    border-radius: 15px; 
     padding: 0 12px;
-    margin: 5px 3px;
-    border-radius: 6px; /* Bo góc nhẹ */
-    background-color: rgba(255, 255, 255, 0.08); /* Nền trắng cực mờ */
-    color: #ffffff;
-    transition: background 0.2s;
+    margin: 4px 3px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Viền mảnh như kính */
 }
 
 /* Tùy chỉnh màu sắc tinh tế cho từng module (Không dùng màu quá rực) */
-#cpu {
-    color: #7aa2f7; /* Xanh dương nhẹ */
-    border-bottom: 2px solid #7aa2f7;
-}
-
-#memory {
-    color: #bb9af7; /* Tím nhạt */
-    border-bottom: 2px solid #bb9af7;
-}
+#cpu { border-bottom: 2px solid #89b4fa; }
+#memory { border-bottom: 2px solid #a6e3a1; }
+#disk { border-bottom: 2px solid #fab387; }
 
 #battery {
     color: #9ece6a; /* Xanh lá dịu */
