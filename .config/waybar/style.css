@@ -55,31 +55,33 @@ window#waybar {
 /* Tùy chỉnh màu sắc tinh tế cho từng module (Không dùng màu quá rực) */
 /* Màu mặc định cho các module */
 /* Cấu hình chung cho cả 3 module */
+/* Thiết lập chung cho CPU, RAM, HDD */
 #cpu, #memory, #disk {
-    padding: 0 10px;
-    margin: 0 4px;
-    color: #ffffff; /* Cố định chữ màu trắng */
-    border-bottom: 3px solid #ffffff; /* Màu mặc định nếu không rơi vào states nào */
+    padding: 0 12px;
+    margin: 4px;
+    color: #ffffff; /* Chữ luôn màu trắng */
+    border-radius: 10px; /* Bo góc cho giống thanh dung lượng */
+    transition: all 0.5s ease; /* Hiệu ứng mượt mà khi đổi số */
 }
 
 /* 0-30%: Xanh lá (Green) */
 #cpu.green, #memory.green, #disk.green {
-    border-bottom: 3px solid #2ecc71;
+    background: linear-gradient(to top, #2ecc71 0%, #2ecc71 30%, rgba(255,255,255,0.1) 30%);
 }
 
 /* 31-60%: Vàng (Yellow) */
 #cpu.yellow, #memory.yellow, #disk.yellow {
-    border-bottom: 3px solid #f1c40f;
+    background: linear-gradient(to top, #f1c40f 0%, #f1c40f 60%, rgba(255,255,255,0.1) 60%);
 }
 
 /* 61-90%: Cam (Orange) */
 #cpu.orange, #memory.orange, #disk.orange {
-    border-bottom: 3px solid #e67e22;
+    background: linear-gradient(to top, #e67e22 0%, #e67e22 90%, rgba(255,255,255,0.1) 90%);
 }
 
 /* 91-100%: Đỏ (Red) */
 #cpu.red, #memory.red, #disk.red {
-    border-bottom: 3px solid #e74c3c;
+    background: linear-gradient(to top, #e74c3c 0%, #e74c3c 100%, rgba(255,255,255,0.1) 100%);
 }
 
 #battery {
