@@ -53,9 +53,34 @@ window#waybar {
 }
 
 /* Tùy chỉnh màu sắc tinh tế cho từng module (Không dùng màu quá rực) */
-#cpu { border-bottom: 2px solid #89b4fa; }
-#memory { border-bottom: 2px solid #a6e3a1; }
-#disk { border-bottom: 2px solid #fab387; }
+/* Màu mặc định cho các module */
+/* Cấu hình chung cho cả 3 module */
+#cpu, #memory, #disk {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: #ffffff; /* Cố định chữ màu trắng */
+    border-bottom: 3px solid #ffffff; /* Màu mặc định nếu không rơi vào states nào */
+}
+
+/* 0-30%: Xanh lá (Green) */
+#cpu.green, #memory.green, #disk.green {
+    border-bottom: 3px solid #2ecc71;
+}
+
+/* 31-60%: Vàng (Yellow) */
+#cpu.yellow, #memory.yellow, #disk.yellow {
+    border-bottom: 3px solid #f1c40f;
+}
+
+/* 61-90%: Cam (Orange) */
+#cpu.orange, #memory.orange, #disk.orange {
+    border-bottom: 3px solid #e67e22;
+}
+
+/* 91-100%: Đỏ (Red) */
+#cpu.red, #memory.red, #disk.red {
+    border-bottom: 3px solid #e74c3c;
+}
 
 #battery {
     color: #9ece6a; /* Xanh lá dịu */
