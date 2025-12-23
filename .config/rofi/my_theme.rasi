@@ -16,9 +16,9 @@
 }
 
 window {
-    width:            15%;
+    width:            50%;
     background-color: @bg;
-    border-radius:    0px;
+    border-radius:    12px;
     border:           4px;
     border-color:     #5f87af; /* Viền rất mảnh màu xám xanh */
 }
@@ -39,7 +39,7 @@ inputbar {
 }
 
 listview {
-    lines:        8;
+    lines:        10;
     columns:      1;
     fixed-height: false;
 }
@@ -57,10 +57,10 @@ element selected {
 }
 
 element-icon {
-    enabled:false;
+    enabled:true;
 }
 element-text {
-    font: "JetBrains Mono Nerd Font 10"; /* Chữ app nhỏ xíu nhìn rất sang */
+    font: "JetBrains Mono Nerd Font 12"; /* Chữ app nhỏ xíu nhìn rất sang */
     vertical-align: 0.5;
     horizontal-align: 0.0; /* Căn lề trái */
 }

@@ -92,10 +92,12 @@ configuration {
 
 	/*---------- File browser settings ----------*/
     filebrowser {
-/*	  directory: "/home";*/
-      directories-first: true;
-      sorting-method:    "name";
-    }
+            directory: "/home/du"; /* Thay 'du' bằng tên user của bạn */
+            directories-first: true;
+            sorting-method: "name";
+            /* Thêm dòng này nếu muốn tìm cả file ẩn */
+            show-hidden: true; 
+        }
 
 	/*---------- Other settings ----------*/
     timeout {
