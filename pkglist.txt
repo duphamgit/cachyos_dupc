@@ -37,6 +37,7 @@ cachyos-zsh-config
 cantarell-fonts
 chromium
 chwd
+cmake
 cpupower
 cryptsetup
 device-mapper
