@@ -1,3 +1,4 @@
+upgrade
 visual-studio-code-bin
 xdg-terminal-exec
 yaru-icon-theme

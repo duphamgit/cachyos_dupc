@@ -183,6 +183,7 @@ ttf-opensans
 ufw
 unrar
 unzip
+upgrade
 upower
 usb_modeswitch
 usbutils
