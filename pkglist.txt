@@ -61,6 +61,7 @@ fcitx5-bamboo
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
+firefox
 fsarchiver
 ghostty
 git
@@ -192,10 +193,12 @@ vi
 vim
 virt-manager
 visual-studio-code-bin
+vlc
 vlc-plugins-all
 vpl-gpu-rt
 vulkan-intel
 waybar
+waydroid
 waypaper
 wget
 which
