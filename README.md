@@ -21,13 +21,13 @@ Bộ sưu tập cấu hình (Dotfiles) tối ưu cho **CachyOS Hyprland**. Đư�
 ## 🛠️ Quy trình cài đặt 3 bước (Setup Guide)
 
 Sau khi bạn đã cài đặt xong bản gốc **CachyOS Hyprland**, hãy thực hiện lần lượt bước sau đây:
-
+""
 git clone https://github.com/duphamgit/cachyos_dupc
 cd cachyos_dupc
 chmod +x install.sh
 ./install.sh
 sudo cp scripts/dupc /usr/local/bin/dupc
 sudo chmod +x /usr/local/bin/dupc
-
+""
 Mở Terminal gõ:
 dupc help
