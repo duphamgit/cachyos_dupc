@@ -30,8 +30,8 @@ cd cachyos_dupc
 chmod +x install.sh
 ./install.sh
 
-2️⃣ Bước 2: Cài đặt Script điều hướng (DUPC)Mặc dù script cài đặt đã hỗ trợ, bạn hãy đảm bảo công cụ dupc đã sẵn sàng để có thể gọi từ bất cứ đâu trong hệ thống. Kiểm tra bằng lệnh:Bashdupc help
+### 2️⃣ Bước 2: Cài đặt Script điều hướng (DUPC)Mặc dù script cài đặt đã hỗ trợ, bạn hãy đảm bảo công cụ dupc đã sẵn sàng để có thể gọi từ bất cứ đâu trong hệ thống. Kiểm tra bằng lệnh:Bashdupc help
 Nếu lệnh trên không hoạt động, hãy copy thủ công bằng lệnh sau:Bashsudo cp scripts/dupc /usr/local/bin/dupc
 sudo chmod +x /usr/local/bin/dupc
 
-3️⃣ Bước 3: Apply Theme và Sử dụngSau khi khởi động lại, hãy bắt đầu cá nhân hóa máy tính của bạn bằng cách sử dụng dupc help để xem hướng dẫn:Xem danh sách theme: dupc listĐổi theme Waybar: dupc theme waybar <tên_theme.css>Đổi theme Rofi: dupc theme rofi <tên_theme.rasi>⌨️ Phím tắt quan trọng (Keybindings)Phím tắtHành độngSUPER + SpaceMở Rofi App LauncherSUPER + FTìm kiếm toàn bộ file (Bao gồm cả file ẩn)SUPER + TMở Terminal (Ghostty/Kitty)SUPER + QĐóng cửa sổ hiện tạiSUPER + MThoát Hyprland
+### 3️⃣ Bước 3: Apply Theme và Sử dụngSau khi khởi động lại, hãy bắt đầu cá nhân hóa máy tính của bạn bằng cách sử dụng dupc help để xem hướng dẫn:Xem danh sách theme: dupc listĐổi theme Waybar: dupc theme waybar <tên_theme.css>Đổi theme Rofi: dupc theme rofi <tên_theme.rasi>⌨️ Phím tắt quan trọng (Keybindings)Phím tắtHành độngSUPER + SpaceMở Rofi App LauncherSUPER + FTìm kiếm toàn bộ file (Bao gồm cả file ẩn)SUPER + TMở Terminal (Ghostty/Kitty)SUPER + QĐóng cửa sổ hiện tạiSUPER + MThoát Hyprland
