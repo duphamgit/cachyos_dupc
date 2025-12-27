@@ -6,6 +6,7 @@ DEST="$HOME/cachyos_dupc"
 echo "--- Đang cập nhật danh sách phần mềm ---"
 pacman -Qqe > "$DEST/pkglist.txt"
 pacman -Qqem > "$DEST/aurlist.txt"
+cp /usr/local/bin/dupc ~/cachyos_dupc/scripts
 
 echo "--- Đang gom cấu hình hệ thống ---"
 

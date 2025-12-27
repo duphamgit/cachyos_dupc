@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Thư mục cấu hình
+ROFI_DIR="$HOME/.config/rofi"
+WAYBAR_DIR="$HOME/.config/waybar"
+
+# 1. HỖ TRỢ LỆNH HELP
+if [[ "$1" == "help" || -z "$1" ]]; then
+    echo "--------------------------------------------------------"
+    echo "🚀 DUPC - TRÌNH QUẢN LÝ THEME TOÀN DIỆN"
+    echo "--------------------------------------------------------"
+    echo "1. Đổi theme cho App Launcher (SUPER + Space):"
+    echo "   👉 dupc theme rofi <name.rasi>"
+    echo ""
+    echo "2. Đổi theme cho File Browser (SUPER + F):"
+    echo "   👉 dupc theme rofi_file <name_file.rasi>"
+    echo ""
+    echo "3. Đổi theme cho Waybar:"
+    echo "   👉 dupc theme waybar <name.css>"
+    echo ""
+    echo "💡 Mẹo: Có thể gõ tên file có hoặc không có đuôi mở rộng."
+    echo "--------------------------------------------------------"
+    exit 0
+fi
+
+# 2. PHÂN TÍCH LOẠI THEME (Rẽ nhánh chính xác)
+ACTION=$1
+TYPE=$2
+THEME_RAW=$3
+
+if [[ "$ACTION" == "theme" ]]; then
+    
+    # XỬ LÝ WAYBAR
+    if [[ "$TYPE" == "waybar" ]]; then
+        THEME_NAME="${THEME_RAW%.css}"
+        SOURCE_STYLE="$WAYBAR_DIR/themes/$THEME_NAME.css"
+        TARGET_STYLE="$WAYBAR_DIR/style.css"
+
+        if [ -f "$SOURCE_STYLE" ]; then
+            ln -sf "$SOURCE_STYLE" "$TARGET_STYLE"
+            pkill -USR2 waybar
+            echo "✅ Waybar đã chuyển sang theme: $THEME_NAME"
+            exit 0
+        else
+            echo "❌ Không tìm thấy: $SOURCE_STYLE"
+            exit 1
+        fi
+
+    # XỬ LÝ ROFI (APP & FILE)
+    elif [[ "$TYPE" == "rofi" || "$TYPE" == "rofi_file" ]]; then
+        THEME_NAME="${THEME_RAW%.rasi}"
+        SOURCE_THEME="$ROFI_DIR/$THEME_NAME.rasi"
+        
+        if [[ "$TYPE" == "rofi_file" ]]; then
+            TARGET_LINK="$ROFI_DIR/current_file_theme.rasi"
+            MSG="File Browser"
+        else
+            TARGET_LINK="$ROFI_DIR/current_theme.rasi"
+            MSG="App Launcher"
+        fi
+
+        if [ -f "$SOURCE_THEME" ]; then
+            ln -sf "$SOURCE_THEME" "$TARGET_LINK"
+            echo "✅ Đã cập nhật $MSG sang theme: $THEME_NAME"
+            exit 0
+        else
+            echo "❌ Lỗi: Không tìm thấy $SOURCE_THEME"
+            exit 1
+        fi
+    else
+        echo "❌ Loại theme '$TYPE' không hợp lệ! (Dùng: rofi, rofi_file, waybar)"
+        exit 1
+    fi
+else
+    echo "❌ Sai cú pháp! Gõ 'dupc help' để xem hướng dẫn."
+    exit 1
+fi
