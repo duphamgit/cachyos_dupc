@@ -31,4 +31,6 @@ chmod +x install.sh
 ./install.sh
 ```
 open Terminal
+```
 dupc help
+```
