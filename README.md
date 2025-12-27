@@ -25,7 +25,7 @@ Sau khi bạn đã cài đặt xong bản gốc **CachyOS Hyprland**, hãy thự
 1️⃣ Bước 1: Tải và Cài đặt tự động
 Mở Terminal, clone repo này về máy và chạy script cài đặt cấu hình:
 ```bash
-git clone [https://github.com/duphamgit/cachyos_dupc](https://github.com/duphamgit/cachyos_dupc)
+git clone https://github.com/duphamgit/cachyos_dupc
 cd cachyos_dupc
 chmod +x install.sh
 ./install.sh
