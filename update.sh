@@ -3,14 +3,35 @@
 # Thư mục chứa backup
 DEST="$HOME/cachyos_dupc"
 
+# Tạo thư mục nếu chưa có
+mkdir -p "$DEST/scripts"
+mkdir -p "$DEST/.config"
+
 echo "--- Đang cập nhật danh sách phần mềm ---"
-pacman -Qqe > "$DEST/pkglist.txt"
-pacman -Qqem > "$DEST/aurlist.txt"
-cp /usr/local/bin/dupc ~/cachyos_dupc/scripts
 
-echo "--- Đang gom cấu hình hệ thống ---"
+# Hàm xuất danh sách phần mềm an toàn
+safe_export_pkg() {
+    if $1 > "$2" 2>/dev/null; then
+        echo "✅ Đã cập nhật $(basename "$2")"
+    else
+        echo "❌ Thất bại khi cập nhật $(basename "$2")"
+    fi
+}
 
-# Hàm copy an toàn: chỉ copy nếu thư mục nguồn tồn tại
+# Sử dụng hàm để xuất danh sách
+safe_export_pkg "pacman -Qqe" "$DEST/pkglist.txt"
+safe_export_pkg "pacman -Qqem" "$DEST/aurlist.txt"
+
+# Copy script dupc
+if cp /usr/local/bin/dupc "$DEST/scripts/"; then
+    echo "✅ Đã backup script dupc"
+else
+    echo "❌ Thất bại khi backup script dupc (Kiểm tra quyền hoặc file nguồn)"
+fi
+
+echo -e "\n--- Đang gom cấu hình hệ thống ---"
+
+# Hàm copy an toàn (giữ nguyên của bạn nhưng tối ưu hiển thị)
 safe_copy() {
     if [ -d "$1" ] || [ -f "$1" ]; then
         cp -rf "$1" "$2"
@@ -32,4 +53,4 @@ safe_copy ~/.config/OpenRGB "$DEST/.config/"
 # Xóa rác nếu có
 rm -rf "$DEST/.config/chromium"
 
-echo "✅ Tất cả đã sẵn sàng!"
+echo -e "\n✨ Tất cả đã sẵn sàng trong: $DEST"
