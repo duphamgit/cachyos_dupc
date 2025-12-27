@@ -30,7 +30,7 @@ cd cachyos_dupc
 chmod +x install.sh
 ./install.sh
 ```
-open Terminal
+Mở Terminal xem hướng dẫn cài đặt theme cho Waybar và Rofi 
 ```
 dupc help
 ```
