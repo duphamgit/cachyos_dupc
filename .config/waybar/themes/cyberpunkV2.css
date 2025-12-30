@@ -42,13 +42,16 @@ window#waybar {
     margin: 4px 3px;
     border: 1px solid rgba(0, 210, 255, 0.2);
 }
-
 #clock {
     font-weight: bold;
     color: #ff007c;
     border: 1px solid #ff007c;
+    
+    /* Thay vì text-align, ta dùng padding đều hai bên */
+    /* Bạn có thể tăng/giảm số 15px để đồng hồ rộng ra hoặc hẹp lại */
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
 /* --- PHẦN FIX LỖI (Dòng 65-75) --- */
 /* Lưu ý: Đảm bảo có dấu phẩy sau mỗi mã màu và không thừa khoảng trắng lạ */
 
