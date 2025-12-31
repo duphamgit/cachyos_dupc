@@ -16,7 +16,7 @@ case "$EXT" in
     jpg|jpeg|png|gif|webp|svg)
         chromium --app="file://$FILE"
         ;;
-    txt|md|conf|sh|py|js|json|lua|ini|css)
+    txt|md|conf|sh|py|js|json|lua|ini|css|rasi)
         # Vì micro chạy trong terminal, bạn cần gọi terminal (ghostty) để chạy nó
         ghostty -e micro "$FILE"
         ;;
