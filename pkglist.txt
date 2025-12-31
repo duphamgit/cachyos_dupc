@@ -9,6 +9,7 @@ base
 base-devel
 bash-completion
 bind
+blueman
 bluez
 bluez-hid2hci
 bluez-libs
