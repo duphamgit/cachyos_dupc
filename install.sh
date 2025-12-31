@@ -27,5 +27,6 @@ fi
 echo -e "${GREEN}🎨 Đang khôi phục cấu hình (.config & .zshrc)...${NC}"
 cp -rf .config ~/
 cp -f .zshrc ~/
-
+# Ép theme Starship sau khi cài đặt
+starship preset jetpack -o ~/.config/starship.toml
 echo -e "${BLUE}✅ Hoàn tất! Hệ thống của bạn đã sẵn sàng.${NC}"

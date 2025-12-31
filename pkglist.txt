@@ -123,6 +123,7 @@ nano
 nano-syntax-highlighting
 nautilus
 netctl
+network-manager-applet
 networkmanager
 networkmanager-openvpn
 nfs-utils
