@@ -31,6 +31,10 @@ chmod +x install.sh
 ./install.sh
 ```
 Copy tất cả file trong thư mục scripts vào /usr/local/bin/
+```
+sudo cp cachyos/scripts/dupc /usr/local/bin
+```
+
 
 Mở Terminal xem hướng dẫn cài đặt theme cho Waybar và Rofi 
 ```
