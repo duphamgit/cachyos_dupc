@@ -30,7 +30,7 @@ cd cachyos_dupc
 chmod +x install.sh
 ./install.sh
 ```
-Copy tất cả file trong thư mục scripts vào /usr/local/bin/
+Copy script dupc trong thư mục scripts vào /usr/local/bin/
 ```
 sudo cp cachyos/scripts/dupc /usr/local/bin
 ```
