@@ -44,7 +44,7 @@
     //     }
     // },
     "custom/hint": {
-        "format": "Super + Q: Close  |  Super + Space: Search  |  Super + K: Keybinding",
+        "format": "Super + Q: Close | Super + Space: Search App | Super + F: Search File",
         "interval": "once",
         "tooltip": false
     },

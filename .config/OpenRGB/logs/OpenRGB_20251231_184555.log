@@ -1,0 +1,58 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20251231_184555
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: CoffeeTheme.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for CoffeeTheme
+52    |Info:    [ResourceManager] Initializing HID interfaces: Success
+52    |Info:    ------------------------------------------------------
+52    |Info:    |               Start device detection               |
+52    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |             Detecting I2C interfaces               |
+57    |Info:    ------------------------------------------------------
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 8086:4680 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 8086:4680 Subsystem: 1458:D000
+57    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-15 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 8086:4680 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 8086:4680 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 8086:4680 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 8086:4680 Subsystem: 1458:D000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-16 Device 8086:7A23 Subsystem: 1458:5001
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 8086:4680 Subsystem: 1458:D000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 8086:4680 Subsystem: 1458:D000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 8086:4680 Subsystem: 1458:D000
+58    |Info:    ------------------------------------------------------
+58    |Info:    |               Detecting I2C devices                |
+58    |Info:    ------------------------------------------------------
+499   |Info:    ------------------------------------------------------
+499   |Info:    |            Detecting I2C DIMM modules              |
+499   |Info:    ------------------------------------------------------
+505   |Info:    [ResourceManager] Detected occupied slot 2, bus 12, type Û˙AWAVLç5ØˇˇAUIΩ∑m€∂m€∂mATE1‰U1ÌSHâ˚HÉÏHãøË
+567   |Info:    [ResourceManager] Detected occupied slot 4, bus 12, type Û˙AWAVLç5ØˇˇAUIΩ∑m€∂m€∂mATE1‰U1ÌSHâ˚HÉÏHãøË
+567   |Info:    ------------------------------------------------------
+567   |Info:    |               Detecting I2C PCI devices            |
+567   |Info:    ------------------------------------------------------
+571   |Info:    ------------------------------------------------------
+571   |Info:    |               Detecting HID devices                |
+571   |Info:    ------------------------------------------------------
+691   |Info:    [B760M AORUS ELITE AX] Registering RGB controller
+691   |Info:    ------------------------------------------------------
+691   |Info:    |            Detecting libusb HID devices            |
+691   |Info:    ------------------------------------------------------
+703   |Info:    ------------------------------------------------------
+703   |Info:    |              Detecting other devices               |
+703   |Info:    ------------------------------------------------------
+709   |Info:    [ResourceManager] Calling Post-detection callbacks
+709   |Info:    ------------------------------------------------------
+709   |Info:    |                Detection completed                 |
+709   |Info:    ------------------------------------------------------
+6926  |Info:    [ProfileManager] Profile loading: Succeeded for B760M AORUS ELITE AX @ HID: /dev/hidraw1
