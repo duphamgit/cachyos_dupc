@@ -44,7 +44,7 @@
     //     }
     // },
     "custom/hint": {
-        "format": "Super + Q: Close | Super + Space: Search App | Super + F: Search File",
+        "format": "Super + Q: Close | Super + Space: Search App | Super + F: Search File | Super + ~: Terminal",
         "interval": "once",
         "tooltip": false
     },
