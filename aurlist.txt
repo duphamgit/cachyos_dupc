@@ -1,3 +1,4 @@
+pyprland
 upgrade
 visual-studio-code-bin
 xdg-terminal-exec

@@ -155,6 +155,7 @@ polkit-kde-agent
 poppler-glib
 power-profiles-daemon
 pv
+pyprland
 python
 python-defusedxml
 python-packaging
