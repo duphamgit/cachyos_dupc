@@ -178,6 +178,7 @@ sudo
 sushi
 swww
 sysfsutils
+tdrop-git
 texinfo
 ttf-bitstream-vera
 ttf-dejavu
@@ -210,6 +211,7 @@ wireplumber
 wl-clipboard
 wofi
 wpa_supplicant
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec
 xdg-user-dirs

@@ -1,4 +1,5 @@
 pyprland
+tdrop-git
 upgrade
 visual-studio-code-bin
 xdg-terminal-exec
