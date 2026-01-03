@@ -1,10 +1,8 @@
 [pyprland]
 plugins = ["scratchpads"]
 
-# Lưu ý: 'term' ở đây là tên gọi của scratchpad, bạn có thể đổi tùy ý
-[scratchpads.term] 
+[scratchpads.term]
 animation = "fromTop"
-command = "ghostty --class dropdown_term" # Hoặc ghostty --class=dropdown_term
-class = "dropdown_term"                 # Giá trị này BẮT BUỘC phải có
-size = "80% 40%"
-unfocus = "hide"                        # Tự động ẩn khi click ra ngoài (tùy chọn)
+command = "kitty --class dropdown_term"
+class = "dropdown_term"
+size = "80% 45%"
