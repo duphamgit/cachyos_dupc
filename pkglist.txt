@@ -21,7 +21,6 @@ btrfs-progs
 cachyos-fish-config
 cachyos-gaming-meta
 cachyos-grub-theme
-cachyos-hello
 cachyos-hooks
 cachyos-kernel-manager
 cachyos-keyring
@@ -155,7 +154,6 @@ polkit-kde-agent
 poppler-glib
 power-profiles-daemon
 pv
-pyprland
 python
 python-defusedxml
 python-packaging
