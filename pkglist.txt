@@ -1,6 +1,5 @@
 7zip
 accountsservice
-alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
@@ -48,6 +47,7 @@ dmraid
 dnsmasq
 dosfstools
 duf
+dunst
 e2fsprogs
 edk2-ovmf
 efibootmgr
@@ -106,7 +106,6 @@ linux-cachyos-lts
 linux-cachyos-lts-headers
 linux-firmware
 logrotate
-loupe
 lsb-release
 lsscsi
 lvm2
@@ -121,7 +120,6 @@ modemmanager
 mtools
 nano
 nano-syntax-highlighting
-nautilus
 netctl
 network-manager-applet
 networkmanager
@@ -173,10 +171,8 @@ sof-firmware
 starship
 steam
 sudo
-sushi
 swww
 sysfsutils
-tdrop-git
 texinfo
 ttf-bitstream-vera
 ttf-dejavu
@@ -207,7 +203,6 @@ which
 wireless-regdb
 wireplumber
 wl-clipboard
-wofi
 wpa_supplicant
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
