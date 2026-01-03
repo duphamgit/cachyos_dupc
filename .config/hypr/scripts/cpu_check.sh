@@ -19,7 +19,7 @@ while true; do
 
     if [ "$CPU_INT" -gt "$THRESHOLD" ]; then
         if [ "$NOTIFICATION_SENT" = false ]; then
-            notify-send -u critical -i thermal-sensor "CẢNH BÁO CPU" "CPU đang quá tải: $CPU_INT%" -h string:x-dunst-stack-tag:cpu_alert
+            notify-send -u critical -i thermal-sensor "CPU Overloaded: $CPU_INT%" -h string:x-dunst-stack-tag:cpu_alert
             NOTIFICATION_SENT=true
         fi
     else
