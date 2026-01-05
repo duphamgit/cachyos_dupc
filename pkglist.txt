@@ -63,6 +63,7 @@ fcitx5-gtk
 fcitx5-qt
 firefox
 fsarchiver
+fuse2
 ghostty
 git
 github-cli
