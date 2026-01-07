@@ -175,6 +175,7 @@ sudo
 swww
 sysfsutils
 texinfo
+thunar
 ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
